@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">봄내진동</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-2821664824480291/5255935612</string>  //봄내 하단광고 코드
+    <string name="ad_unit_id">ca-app-pub-2821664824480291/9357287562</string>  //봄내 전면광고 코드
+
+
+<!--    <string name="app_name">겨울진동</string>-->
+
+
+<!--    <string name="banner_ad_unit_id">ca-app-pub-2821664824480291/2247448720</string>-->
+<!--    &lt;!&ndash;//겨울 하단광고 코드&ndash;&gt;-->
+<!--    <string name="ad_unit_id">ca-app-pub-2821664824480291/3728885504</string>-->
+<!--    &lt;!&ndash;//겨울 전면광고 코드&ndash;&gt;-->
+
+
+</resources>
