@@ -56,24 +56,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageButton ibtn3;
     ImageButton ibtn4;
 
-//    private final long FINSH_INTERVAL_TIME = 2000;
-//    private long backPressedTime = 0;
+    private final long FINSH_INTERVAL_TIME = 2000;
+    private long backPressedTime = 0;
 
     private Button bt_tab1, bt_tab2;
 
-//    @Override
-//    public void onBackPressed() {
-//        long tempTime = System.currentTimeMillis();
-//        long intervalTime = tempTime - backPressedTime;
-//
-//        if (0 <= intervalTime && FINSH_INTERVAL_TIME >= intervalTime) {
-//            super.onBackPressed();
-//            vib.cancel();
-//        } else {
-//            backPressedTime = tempTime;
-//            Toast.makeText(getApplicationContext(), "'뒤로'버튼을한번더누르시면종료됩니다.", Toast.LENGTH_SHORT).show();
-//        }
-//    }
+    @Override
+    public void onBackPressed() {
+        long tempTime = System.currentTimeMillis();
+        long intervalTime = tempTime - backPressedTime;
+
+        if (0 <= intervalTime && FINSH_INTERVAL_TIME >= intervalTime) {
+            super.onBackPressed();
+            vib.cancel();
+        } else {
+            backPressedTime = tempTime;
+            Toast.makeText(getApplicationContext(), "'뒤로'버튼을한번더누르시면종료됩니다.\n     Click the'Back' button again to finish.", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
 //
 
 

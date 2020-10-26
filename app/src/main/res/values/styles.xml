@@ -13,8 +13,9 @@
 
     <style name="SplashTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
         <!--<item name="android:windowBackground">@mipmap/lsp2</item>-->
-        <!--<item name="android:windowBackground">@mipmap/h1024</item>-->
-        <item name="android:windowBackground">@mipmap/winter_loading</item>
+        <item name="android:windowBackground">@mipmap/h1024</item> //봄내진동
+
+<!--        <item name="android:windowBackground">@mipmap/winter_loading</item>--> //겨울진동
 
 
     </style>

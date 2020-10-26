@@ -2,31 +2,35 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 29
+
+
     defaultConfig {
         applicationId "com.idh.songk.healthmassage_spring"
         minSdkVersion 16
         targetSdkVersion 29
-        versionCode 36
-        versionName "4.5"
+        versionCode 39
+        versionName "4.8"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
+
+
     buildTypes {
         release {
             minifyEnabled false
-            applicationIdSuffix ".free"
-            manifestPlaceholders = [appName: "봄내진동"] // 안드로이드 앱 이름
+//            applicationIdSuffix ".free"
+//            manifestPlaceholders = [appName: "봄내진동"] // 안드로이드 앱 이름
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-        release2 {
-            applicationIdSuffix ".dev"
-            manifestPlaceholders = [appName: "겨울진동"]
-        }
-
-        release3 {
-            applicationIdSuffix ".dev2"
-            manifestPlaceholders = [appName: "겨울진동"]
-        }
+//        release2 {
+//            applicationIdSuffix ".dev"
+//            manifestPlaceholders = [appName: "겨울진동"]
+//        }
+//
+//        release3 {
+//            applicationIdSuffix ".dev2"
+//            manifestPlaceholders = [appName: "겨울진동"]
+//        }
     }
 }
 
@@ -56,9 +60,9 @@ dependencies {
 ////    implementation 'com.android.support:appcompat-v7:28.0.0'//gif용
 
 
-//    classpath 'com.google.gms:google-services:4.2.0' //파이어베이스용용
+//    classpath 'com.google.gms:google-services:4.3.4' //파이어베이스용용
 
-//    implementation 'com.google.firebase:firebase-core:16.0.4'
+//    implementation 'com.google.firebase:firebase-core:17.5.1'
 }
 
 //apply plugin: 'com.google.gms.google-services' //파이어베이스용
